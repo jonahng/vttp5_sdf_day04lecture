@@ -14,7 +14,7 @@ public class myServerMain {
             System.out.println("Waiting for connections");
             Socket conn = socket.accept();
             System.out.println("User connected");
-            
+
 
         }
 
