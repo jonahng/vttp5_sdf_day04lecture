@@ -14,7 +14,7 @@ import java.io.*;
 
 public class ClientMain {
     public static void main(String[] args) throws IOException{
-        Socket sock = new Socket("localhost", 5000);
+        Socket sock = new Socket("localhost", 3000);
         System.out.printf(">>>> connected to server");
 
 

@@ -10,14 +10,18 @@ import java.io.*;
 public class ServerMain{
     public static void main(String[] args) throws IOException{
 
-        while(true){
-            int port = 3000;
+        int port = 3000;
         if (args.length >0){
             port = Integer.parseInt(args[0]);
         }
         System.out.printf(">>Listening on port %d\n" ,port);
 
         ServerSocket server = new ServerSocket(port);
+
+        
+
+        while(true){
+            
         System.out.println("Waiting for connect");
 
         Socket conn = server.accept();
